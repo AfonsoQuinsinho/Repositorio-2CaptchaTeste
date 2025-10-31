@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Demo 2Captcha — Opção Desenvolvedor</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/client.js" defer></script>
+</head>
+<body>
+  <main class="container">
+    <h1>Demo: integração 2Captcha (modo desenvolvedor)</h1>
+    <section class="panel">
+      <h2>Painel do Desenvolvedor</h2>
+      <label><input type="checkbox" id="enable-2captcha" checked> Ativar 2Captcha (desenvolvedor)</label>
+      <div class="row">
+        <label>Chave API (developer):</label>
+        <input id="dev-api-key" type="text" value="68a195140aaa1d927da66ca2fc156e56">
+      </div>
+      <p class="note">**Nota:** Esta chave está visível apenas para demonstração.</p>
+    </section>
+    <section class="panel">
+      <h2>Resolver reCAPTCHA v2 (exemplo)</h2>
+      <div class="row"><label>Site key:</label><input id="sitekey"></div>
+      <div class="row"><label>Page URL:</label><input id="pageurl"></div>
+      <button id="solve-btn">Pedir solução (2Captcha)</button>
+      <div id="result" class="result"></div>
+    </section>
+  </main>
+</body>
+</html>
